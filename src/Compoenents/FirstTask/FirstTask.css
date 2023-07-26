@@ -1,0 +1,153 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainbg: hsl(217, 54%, 11%);
+    --cardbg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --fontsize: 18px;
+    --dark-blue: hsl(215, 32%, 27%);
+}
+
+@font-face {
+    font-family: 'outfitBold';
+    src: url('./images/Outfit/static/Outfit-Bold.ttf');
+}
+
+.first-task {
+    background-color: var(--mainbg);
+    width: 100%;
+    height: 100vh;
+    font-family: "outfitBold";
+}
+
+.card {
+    background-color: var(--cardbg);
+    height: 548px;
+    width: 302px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.card-header {
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 22px;
+    display: block;
+    cursor: pointer;
+}
+
+.card-header:hover {
+    color: var(--cyan);
+}
+
+.card p {
+    color: var(--soft-blue);
+    font-size: var(--fontsize);
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.card-info-left,
+.card-info-right {
+    display: flex;
+    align-items: center;
+    font-size: 16px !important;
+    line-height: 20px !important;
+}
+
+.card-info-left p {
+    color: var(--cyan);
+}
+
+.card-info-left-icon {
+    width: 11px !important;
+    height: 18px !important;
+    margin-right: 7px;
+}
+
+.card-info-right-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--dark-blue);
+    padding-top: 16px;
+}
+
+.card-author-img {
+    width: 33px !important;
+    height: 33px !important;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.card-author-info {
+    font-size: 16px;
+}
+
+.card-author-info span {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card-author-info span:hover {
+    color: var(--cyan)
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image-hover {
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    top: 0;
+    background-color: var(--cyan);
+    opacity: 0;
+    z-index: 1;
+}
+
+.hover-image {
+    width: 48px !important;
+    height: 48px !important;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.card-image:hover .hover-image{
+    opacity: 1;
+}
+
+.card-image:hover .card-image-hover {
+    opacity: 0.4;
+}

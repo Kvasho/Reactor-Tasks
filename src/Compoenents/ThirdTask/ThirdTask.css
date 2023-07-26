@@ -1,0 +1,133 @@
+.third-task {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(197, 228, 231, 1);
+}
+
+.splitter-header {
+    color: rgba(61, 102, 102, 1);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 160px;
+    letter-spacing: 15px;
+    line-height: 35px;
+    margin-bottom: 85px;
+}
+
+.splitter {
+    Width: 920px;
+    height:  481px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.splitter-left {
+    padding: 13px 0;
+}
+
+.splitter h5 {
+    color: rgba(94, 122, 125, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+.bill-input {
+    width: 95%;
+    height: 48px;
+    background-color: rgba(243, 249, 250, 1);
+    border: 2px solid rgba(38, 194, 174, 1);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    color: rgba(0, 71, 75, 1);
+}
+
+.bill {
+    margin-bottom: 40px;
+}
+
+.select-tip-btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 14px;
+    grid-row-gap: 16px;
+}
+
+.select-tip-btn {
+    width: 117px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 71, 75, 1);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.select-tip-btn:hover {
+    background-color: rgba(159, 232, 223, 1);
+    color: rgba(0, 71, 75, 1);
+}
+
+.select-tip {
+    margin-bottom: 40px;
+}
+
+.splitter-right {
+    background-color: rgba(0, 71, 75, 1);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.tip-amount-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount-window h4 {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tip-amount-window h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(127, 157, 159, 1);
+}
+
+.tip-amount-window h1 {
+    font-size: 48px;
+    line-height: 71px;
+    font-weight: 700;
+    color: rgba(38, 194, 174, 1);
+}
+
+.reset-button {
+    width: 100%;
+    height: 48px;
+    background-color: rgba(38, 194, 174, 1);
+    color: rgba(0, 71, 75, 1);
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: rgba(159, 232, 223, 1);
+}
